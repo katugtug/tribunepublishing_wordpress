@@ -12,40 +12,51 @@
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel='stylesheet' type="text/css" />
     </head>
     <body>
+        <h2>Debug Menu</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/?category_name=equipment">Equipment</a></li>
+            <li><a href="/?category_name=quality">Quality</a></li>
+            <li><a href="/?category_name=products">Products</a></li>
+            <li><a href="/?category_name=about-us">About Us</a></li>
+            <li><a href="/?category_name=bid-request">Bid Request</a></li>
+        </ul>
         <!-- beginning of the body tag -->
         <!-- get neck here -->
         <div class="neck">i&#39;m the neck</div>
         <!-- get page contennt here -->
 
-        <div class="content">
+        <div class="content"> 
         <?php $category_in_url = (get_query_var( 'category_name' )) ? get_query_var('category_name') : "home"; ?>
         <?php echo "<pre><span>category_in_url: </span>"; print_r( $category_in_url ); echo "</pre>"; ?>
         <?php $large_cat = get_cat_ID("Large"); ?>
         <?php $medium_cat = get_cat_ID("Medium"); ?>
         <?php $small_cat = get_cat_ID("Small"); ?>
-        <?php $location_cat = get_cat_ID($category_in_url); ?>
-        <!-- LARGE BLOCKS -->
+        <?php $location_cat = get_category_by_slug($category_in_url)->term_id; ?>
+        <?php echo "LOL"; ?>
+        
+        <!-- SMALL BLOCKS -->
             <?php
-            $large_args = array('category__and' => array($location_cat, $large_cat));
-            $large_query = new WP_Query($large_args);
-            if ( $large_query -> have_posts()):
-                while ($large_query -> have_posts()) : 
-                    $large_query -> the_post(); ?>
-                    <div class="large-block">
-                        <h2 class="large-block-title">
+            $small_args = array('category__and' => array($location_cat, $small_cat));
+            $small_query = new WP_Query($small_args);
+            if ( $small_query -> have_posts()):
+                while ($small_query -> have_posts()) : 
+                    $small_query -> the_post(); ?>
+                    <div class="small-block">
+                        <h2 class="small-block-title">
                             <?php the_title(); ?>
                         </h2>
                         <h3>
                             <?php the_category(); ?>
                         </h3>
-                        <div class="large-block-body">
+                        <div class="small-block-body">
                             <?php the_content(); ?>
                         </div>
                     </div>
                  <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
             <?php else: ?>
-                <p><?php _e( sprintf("No Large Blocks in location cat ID %s",$location_cat)); ?></p>
+                <p><?php _e( sprintf("No Small Blocks in location cat ID %s",$location_cat)); ?></p>
             <?php endif; ?>
             
         <!-- MEDIUM BLOCKS -->
@@ -72,29 +83,33 @@
                 <p><?php _e( sprintf("No Medium Blocks in location cat ID %s",$location_cat)); ?></p>
             <?php endif; ?>
             
-        <!-- SMALL BLOCKS -->
+        <!-- LARGE BLOCKS -->
             <?php
-            $small_args = array('category__and' => array($location_cat, $small_cat));
-            $small_query = new WP_Query($small_args);
-            if ( $small_query -> have_posts()):
-                while ($small_query -> have_posts()) : 
-                    $small_query -> the_post(); ?>
-                    <div class="small-block">
-                        <h2 class="small-block-title">
+            $large_args = array('category__and' => array($location_cat, $large_cat));
+            $large_query = new WP_Query($large_args);
+            if ( $large_query -> have_posts()):
+                while ($large_query -> have_posts()) : 
+                    $large_query -> the_post(); ?>
+                    <div class="large-block">
+                        <h2 class="large-block-title">
                             <?php the_title(); ?>
                         </h2>
                         <h3>
                             <?php the_category(); ?>
                         </h3>
-                        <div class="small-block-body">
+                        <div class="large-block-body">
                             <?php the_content(); ?>
                         </div>
                     </div>
                  <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
             <?php else: ?>
-                <p><?php _e( sprintf("No Small Blocks in location cat ID %s",$location_cat)); ?></p>
+                <p><?php _e( sprintf("No Large Blocks in location cat ID %s",$location_cat)); ?></p>
             <?php endif; ?>
+            
+
+            
+
         </div><!--class="content"-->
         
         
