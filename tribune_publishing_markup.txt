@@ -1,0 +1,28 @@
+<!-- Markup Demo for Tribune Publishing Site -->
+<div class="header">
+    <img class="header-logo">
+    <p class="header-title">
+    <p class="header-address">
+    <ul class="header-navigation">
+        <li class="header-navigation-item">
+        
+<div class="neck">
+    <h1 class="neck-title">
+    <p class="neck-subtitle">
+<div class="body-three">  <!--a body split into 3 equal columns -->
+    <div class="small-block">
+        <h2 class="small-block-title">
+        <p class="small-block-subtitle">
+        <p class="small-block-body">
+        
+<div class="body-two">  <!--a body split into 2 equal columns -->
+    <div class="medium-block">
+        <h2 class="medium-block-title">
+        <p class="medium-block-subtitle">
+        <p class="medium-block-body">
+
+<div class="body-one">  <!-- a body that is not split into columns -->
+    <div class="large-block">
+        <h2 class="large-block-title">
+        <p class="large-block-subtitle">
+        <p class="large-block-body">

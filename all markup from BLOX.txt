@@ -1,0 +1,99 @@
+<style>
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+
+}
+.header-logo {
+    float:left;
+    width:172px;
+    height:79px;
+}
+.header-title {
+    font-size:32pt;
+    margin-left:190px;
+    width:50%;
+    font-weight:300;
+}
+.header-address {
+    float:right;
+}
+.header-navigation {
+    float:right;
+}
+.header-navigation-item {
+    float:left;
+}
+.neck {
+    height:500px;
+    width:100%;
+    border:10px solid black;
+}
+div.clear{
+    clear:both;
+}
+</style>
+
+<!-- Markup Demo for Tribune Publishing Site -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<div class="header">
+    <p class="header-address">101 North Fourth Street, Columbia, MO 65201, (800) 333-6256</p>
+    <img class="header-logo" src="[% cms.page.cdn(cms.page.app+'/'+cms.page.skin+'/resources/images/tribunepublishinglogo.gif') %]" />
+    <p class="header-title">Tribune Publishing</p>
+</div>
+<div class="clear" />
+<div class="neck">
+    <h1 class="neck-title">Welcome</h1>
+    <div class="neck-subtitle">If you want easy pricing, award-winning quality and smooth production, turn to Tribune Publishing.</div>
+</div>
+
+<div class="body-three">  <!--a body split into 3 equal columns -->
+    <div class="small-block">
+        <h2 class="small-block-title">One-stop publishing</h2>
+        <div class="small-block-subtitle"></div>
+        <div class="small-block-body">Printing, mailing, bindery & shipping.</div>
+    </div>
+    <div class="small-block">
+        <h2 class="small-block-title">Cost-effective solutions </h2>
+        <div class="small-block-subtitle"></div>
+        <div class="small-block-body">Cold-web offset printing and fully digital workflow. Prepress, mailing and shipping expertise.</div>
+    </div>
+    <div class="small-block">
+        <h2 class="small-block-title">Flexible formats</h2>
+        <div class="small-block-subtitle"></div>
+        <div class="small-block-body">Newspapers, magazines, newsletters, catalogs, ad flyers & mailers;one-color to multi-color.</div>
+    </div>
+</div>
+        
+<div class="body-two">  <!--a body split into 2 equal columns -->
+    <div class="medium-block">
+        <h2 class="medium-block-title">Cutting Crew’s I Just Died In Your Arms Tonight</h2>
+        <div class="medium-block-subtitle"></div>
+        <div class="medium-block-body"><p>You’ll find that the Tribune staff works whilst listening to only the most exclusive one hit wonder artists. Let their easy listening become your classy printed product. You’ll find that the Tribune staff works whilst listening to only the most exclusive one hit wonder artists. Let their easy listening become your classy printed product. You’ll find that the Tribune staff works whilst listening to only the most exclusive one hit wonder artists. Let their easy listening become your classy printed product. You’ll find that the Tribune staff works whilst listening to only the most exclusive one hit wonder artists. Let their easy listening become your classy printed product.</p></div>
+    </div>
+    <div class="medium-block">
+        <h2 class="medium-block-title">Tom Waits... For No Man</h2>
+        <div class="medium-block-subtitle"></div>
+        <div class="medium-block-body"><p>Not afraid to openly speak of their adoration of unlimited breadsticks, soup, and salad days, Tribune employees are some of the most frugal in the business. See how this frugality translates directly into savings for you, the customer!</p><p>Not afraid to openly speak of their adoration of unlimited breadsticks, soup, and salad days, Tribune employees are some of the most frugal in the business. See how this frugality translates directly into savings for you, the customer!</p></div>
+    </div>
+</div>
+
+<div class="body-one">  <!-- a body that is not split into columns -->
+    <div class="large-block">
+        <h2 class="large-block-title">The Dawn of a New Age</h2>
+        <div class="large-block-subtitle">Printing with the Tribune is like doing business with a Greek god of Efficiency</div>
+        <div class="large-block-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean adipiscing molestie magna dignissim rutrum. Phasellus a erat rhoncus, dapibus sapien non, sollicitudin risus. Ut convallis est interdum posuere vehicula. Aenean ac molestie lorem. Vestibulum adipiscing, urna sed feugiat bibendum, velit dui faucibus nulla, vel tincidunt arcu tellus eget nulla. Maecenas condimentum diam vel lorem laoreet, ac ultrices tortor pulvinar. Sed euismod eros eu est scelerisque, in laoreet enim venenatis.</p>
+
+            <p>Phasellus at ipsum tortor. Donec pulvinar molestie dolor, eget faucibus ligula fringilla quis. Proin ac mattis risus, in adipiscing enim. Donec bibendum sapien mi, quis malesuada velit commodo in. Mauris imperdiet venenatis elit, in scelerisque massa consequat vel. Aenean lacinia ipsum justo, eu gravida velit ullamcorper in. Vestibulum venenatis eros sed dui mollis commodo. Donec lobortis metus id tortor posuere, faucibus suscipit enim ornare. Donec eget lacinia augue. Sed tincidunt blandit congue. Nulla gravida enim massa, ut facilisis nibh porttitor sed. Duis dignissim enim nunc, a aliquet libero condimentum eu. Nunc erat lacus, mattis nec orci eu, congue lacinia nulla. Proin cursus facilisis metus eget imperdiet.</p>
+
+            <p>Nam quis lectus eget lorem fermentum commodo. Maecenas tristique elit in vestibulum porta. Fusce sagittis a diam sit amet adipiscing. Sed tincidunt mollis velit in consectetur. Aenean quis aliquam elit. Aliquam erat volutpat. Aliquam et suscipit elit, at aliquet lectus. Cras pretium justo ut libero condimentum, et rutrum sem malesuada. Praesent rutrum dui eu blandit adipiscing. Phasellus at odio metus. Etiam rutrum luctus nulla id congue. Phasellus fermentum porttitor eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <p>Pellentesque mi ligula, bibendum tempus erat eget, scelerisque mattis ligula. Praesent consectetur auctor libero, ut volutpat quam. Suspendisse cursus volutpat nunc nec pulvinar. Morbi sit amet lectus vel erat dignissim iaculis. Nunc nec purus ac augue blandit mollis. Proin metus ante, elementum ac ipsum quis, ultrices ultricies ipsum. Mauris rutrum, dui nec malesuada imperdiet, est sem ultricies risus, eget fringilla eros enim id ipsum. Etiam at porttitor mauris. Sed nisl massa, faucibus sed rutrum a, tempus sit amet magna. Morbi magna neque, fermentum et imperdiet et, semper id turpis. Ut suscipit pulvinar erat ut ullamcorper. Vivamus vitae turpis non ante ullamcorper fringilla. Fusce ut accumsan nibh, ut dapibus leo. Ut ac enim imperdiet, malesuada turpis in, porttitor urna. Aliquam erat volutpat. Donec sodales nulla ac feugiat feugiat.</p>
+
+            <p>Donec vestibulum augue et faucibus aliquet. Pellentesque sodales magna et est tristique, vel dignissim libero venenatis. Sed tempus sodales tortor in vehicula. Nulla luctus purus eu felis sodales pellentesque. Aenean a neque nec odio iaculis pellentesque. Nam sollicitudin volutpat velit a pharetra. Curabitur in gravida lectus.</p>
+       
+        </div>
+    </div>
+</div>
