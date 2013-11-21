@@ -1,10 +1,322 @@
+/* BASE STYLES */
+
 * {
    font-family: 'Open Sans',sans-serif;
 }
 
-.header {
-
+.menu-header-menu-container a {
+    text-decoration:none;
+    color:black;
 }
+
+.current-menu-item > a {
+    font-weight:bold; 
+    border-bottom:3px solid grey;
+}
+
+.menu-header-menu-container a:hover {
+    border-bottom: 3px solid #990033;
+    color:#990033;
+}
+
+.footer {
+    min-height:100px;
+}
+.header-red {
+    color:#990033;
+}
+
 div.clear {
     clear:both;
 }
+
+.everything {
+    max-width:1400px;
+    margin:0 auto;
+}
+.header-title {
+    font-weight: 300;
+}
+div.header-left {
+    width:49.5%;
+    float:left;
+    padding-bottom: 10px;
+}
+div.header-right {
+    width:49.5%;
+    float:right;
+    padding-bottom: 10px;
+}
+.header-logo {
+    max-width:150px;
+    float:left;
+    margin-right:24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header-title {
+    font-size:36pt;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.menu-header-menu-container ul li {
+    display:inline;
+    padding:5px;
+}
+
+.menu-header-menu-container {
+    float:right;
+    margin-top: 3px;
+    margin-bottom:3px;
+
+}
+
+.header-address {
+    position:static;
+    float:right;
+    margin-top: 3px;
+    margin-bottom:3px;
+    padding-top:10px;
+    
+}
+div.small-block {
+    width:30%;
+    float:left;
+    margin-right:3%;
+}
+div.medium-block {
+    width:48%;
+    float:left;
+    margin-right:1.75%;
+}
+div.large-block {
+    width:99%;
+    float:left;
+}
+.small-block p,.medium-block p,.large-block p {
+    margin-left:25px;
+    margin-top:3px;
+}
+div.small-block h2 {
+    font-weight:400;
+    font-size:20pt;
+    margin-bottom:10px;
+}
+div.medium-block h2 {
+    font-weight:400;
+    font-size:24pt;
+    margin-bottom:10px;
+}
+div.large-block h2 {
+    font-weight:300;
+    font-size: 42pt;
+    margin-bottom:10px;
+}
+div.neck-container {
+    background-color: lightgrey;
+    height: 400px;
+    position:relative;
+}
+div.neck-container h1 {
+    color:white;
+    background-color:rgba(153, 0, 51, 0.70);
+    position: absolute;
+    bottom: 39px;
+    padding:7px;
+    font-weight:300;
+    font-size: 24pt;
+}
+div.neck-container p {
+    color:white;
+    background-color:rgba(153, 0, 51, 0.70);
+    position: absolute;
+    bottom: 5px;
+    padding:4px;
+    margin-left: 50px;
+}
+div.neck-container img{
+    display:none;
+}
+div.neck-image-container {
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+.footer p {
+    float:right;
+    font-size: 10px;
+    color: grey;
+}
+
+@media screen and (min-width: 651px) and (max-width: 1250px){
+    /*MIDDLE SIZE*/
+    * {
+        /*background-color: #EEEEEE;*/
+    }
+    .header-logo {
+        margin-right: 10px;
+    }
+    .header-address {
+    position:absolute;
+    top:10px;
+    right:10px;
+    margin-top: 3px;
+    margin-bottom:3px;
+    padding-top:10px;
+    
+}
+    .header-title {
+        font-size: 24pt;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding-top: 24px;
+    }
+    span.address-comma {
+        display:none;
+    }
+    span.address-line {
+        display:block;
+        text-align: center;
+    }
+    .header-address {
+    float:none;
+    margin-top: 3px;
+    margin-bottom:3px;
+    padding-top: 10px;
+    }
+    .header div.header-left {
+        width:auto;
+        float:none;
+    }
+    .header div.header-right {
+        width:100%;
+        float:right;
+    }
+
+    .header .menu-header-menu-container {
+    float:right;
+    margin-top:0;
+    margin-bottom:0;
+    padding-top:0px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:650px) {
+    /* MOBILE STYLE */
+    * { 
+       /* background-color: lightgrey;*/
+    }
+    div.small-block {
+        width:100%;
+        float:none;
+        margin-right:0;
+    }
+    div.medium-block {
+        width:100%;
+        float:none;
+        margin-right:0;
+    }
+    div.large-block {
+        width:100%;
+        float:none;
+    }
+    div.large-block h2 {
+        font-weight:300;
+        font-size: 24pt;
+        margin-bottom:10px;
+    }
+    div.small-block h2 {
+        font-weight:300;
+        font-size:16pt;
+        margin-bottom:10px;
+    }
+    div.medium-block h2 {
+        font-weight:300;
+        font-size:18pt;
+        margin-bottom:10px;
+    }
+    div.neck-container h1 {
+        color:white;
+        background-color:rgba(153, 0, 51, 0.70);
+        position: absolute;
+        bottom: 60px;
+        padding:7px;
+        font-weight:300;
+        font-size: 18pt;
+    }
+    div.neck-container p {
+        color:white;
+        background-color:rgba(153, 0, 51, 0.70);
+        position: absolute;
+        bottom: 5px;
+        padding:4px;
+        margin-left: 50px;
+    }
+    div.header-left {
+        width:100%;
+        float:none;
+    }
+    div.header-right {
+        width:100%;
+        float:none;
+}    
+
+    .header-logo {
+        max-width:200px;
+        width:80%;
+        float:none;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display:block;
+    }
+    .header-title {
+        font-size:18pt;
+        margin-top: 10px;
+        margin-bottom:10px;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+    }
+    span.address-comma {
+        display:none;
+    }
+    span.address-line {
+        display:block;
+        text-align: center;
+    }
+    .header-address {
+    float:none;
+    margin-top: 3px;
+    margin-bottom:3px;
+    position: static;
+    }
+    .menu-header-menu-container ul li {
+    display:block;
+    margin-top:10px;
+    margin-bottom: 10px;
+    width:48%;
+    font-size: 14pt;
+    font-weight: 400;
+    padding:0px;
+    float:left;
+    text-align:center;
+    }
+    .menu-header-menu-container ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    .menu-header-menu-container {
+        margin-top: 3px;
+        margin-bottom:3px;
+        float:none;
+    }
+
+    div.neck-container {
+        max-height: 300px; 
+    }
+} 
