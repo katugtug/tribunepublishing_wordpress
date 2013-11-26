@@ -44,7 +44,12 @@
         </div> <!-- class="header" -->
         <div class="clear"></div>
         <div class="content">
-        
+            <!-- the standard loop, though not used, is included here to hopefully avoid breaking admin search -->
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <!-- nothing happened - but it did find some content in THE LOOP -->
+                <?php endwhile; else: ?>
+                    <!-- found nothing in THE LOOP -->
+                <?php endif; ?>
             <!-- NECK BLOCK -->
             <div class="neck-container">
                 <?php $neck_args = array('category__and' => array($location_cat, $neck_cat));
